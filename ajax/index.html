@@ -42,7 +42,7 @@
  });
  }
  if(location.hash){
-   fetchpage(location.hash.substring(2));
+   fetchpage(location.hash.substr(2));
  } else {
    fetchpage('welcome');
  }
