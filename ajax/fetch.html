@@ -10,15 +10,16 @@
     </article>
     <input type="button" value="fetch" onclick="
       /*
-      fetch('css').then(function(response){
+      fetch('html').then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
       })
       */
       //Asynchronous
-      fetch('javascript').then(function(임의값){
-        if(임의값.status == '404') {
+      fetch('html').then(function(response){
+        console.log(response.status);
+        if(response.status == '404') {
           alert('not found');
         }
       });
