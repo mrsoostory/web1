@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<!--구글애널리틱스 코드 시작-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134557770-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134557770-1');
+</script>
+<!--구글애널리틱스 코드 끝-->
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <input type="button" value="night" onclick="
+  nightDayHandler(this);
+  ">
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+  <ol>
+    <li><a onclick="
+      document.querySelector('article').innerHTML ='<h2>HTML</h2>HTML is...';
+      ">HTML</a></li>
+    <li><a onclick="
+      document.querySelector('article').innerHTML ='<h2>CSS</h2>CSS is...';
+      ">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <div id="article">
+<article></article>
+</div>
+</div>
+<!--라이브리 코드 시작-->
+  <!-- 라이브리 시티 설치 코드 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC80MjYzOS8xOTE4Ng==">
+  	<script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+
+         if (typeof LivereTower === 'function') { return; }
+
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  	</script>
+  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div>
+  <!-- 시티 설치 코드 끝 -->
+<!--라이브리 코드 끝-->
+</body>
+</html>
