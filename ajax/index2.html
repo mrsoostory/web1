@@ -41,9 +41,9 @@
      item = item.trim();
      var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
      i = i + 1;
+     document.querySelector('#nav').innerHTML = tag;
    }
-   document.querySelector('#nav').innerHTML = tag;
- })
+  })
 });
 </script>
 </body>
