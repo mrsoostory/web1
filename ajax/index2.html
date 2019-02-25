@@ -39,7 +39,7 @@
    while (i<item.length) {
      var item = item[i];
      item = item.trim();
-     var tag = '<li><a href="#!'+item+'" onclick="fetchpage(''+item+'')">'+item+'</a></li>'
+     var tag = '<li><a href="#!'+item+'" onclick="fetchpage('+'+item+'+')">'+item+'</a></li>'
      i = i + 1;
    }
    document.querySelector('#nav').innerHTML = tag;
