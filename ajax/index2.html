@@ -34,10 +34,10 @@
  }
  fetch('list').then(function(response){
  response.text().then(function(text){
-   var item = text.split(',');
+   var items = text.split(',');
    var i = 0;
    while (i<item.length) {
-     var item = item[i];
+     var item = items[i];
      item = item.trim();
      var tag = '<li><a href="#!'+item+'" onclick="fetchpage('+'+item+'+')">'+item+'</a></li>'
      i = i + 1;
