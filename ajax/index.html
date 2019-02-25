@@ -24,10 +24,7 @@
   ">
   <h1><a href="#!welcome">WEB</a></h1>
   <div id="grid">
-  <ol>
-    <li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
-    <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
-    <li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
+  <ol id="nav">
   </ol>
   <div id="article">
 <article></article>
@@ -46,6 +43,10 @@
  } else {
    fetchPage('welcome');
  }
+ function fetchPage(list){
+   fetch(list).then(function(response){
+   response.text().then(function(text){
+     document.querySelector('#nav').innerHTML = text;
 </script>
 <!--라이브리 코드 시작-->
   <!-- 라이브리 시티 설치 코드 -->
