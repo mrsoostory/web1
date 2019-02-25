@@ -47,16 +47,14 @@
  response.text().then(function(text){
    var item = text.split(',');
    var i = 0;
-   var tags = '';
    while (i<item.length) {
      var item = item[i];
      item = item.trim();
      var tag = '<li><a href="#!'+item+'" onclick="fetchpage(\''+item+\')">'+item+'</a></li>'
-     tags = tags + tag;
      i = i + 1;
    }
    console.log(items);
-   document.querySelector('#nav').innerHTML = tags;
+   document.querySelector('#nav').innerHTML = tag;
  })
 });
 </script>
