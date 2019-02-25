@@ -43,10 +43,11 @@
  } else {
    fetchPage('welcome');
  }
- function fetchPage(list){
-   fetch(list).then(function(response){
-   response.text().then(function(text){
-     document.querySelector('#nav').innerHTML = text;
+ fetch(list).then(function(response){
+ response.text().then(function(text){
+   document.querySelector('#nav').innerHTML = text;
+ })
+});
 </script>
 <!--라이브리 코드 시작-->
   <!-- 라이브리 시티 설치 코드 -->
