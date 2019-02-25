@@ -43,7 +43,7 @@
  } else {
    fetchPage('welcome');
  }
- fetch(list).then(function(response){
+ fetch('list').then(function(response){
  response.text().then(function(text){
    document.querySelector('#nav').innerHTML = text;
  })
